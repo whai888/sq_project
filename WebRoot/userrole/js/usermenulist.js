@@ -1,0 +1,3 @@
+function onQuery(){
+	$("#jform").submit();
+}

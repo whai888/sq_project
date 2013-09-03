@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="sq_project">
+        <wb-resource deploy-path="/" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/src/config"/>
+        <wb-resource deploy-path="/" source-path="/src/persistence"/>
+        <wb-resource deploy-path="/" source-path="/src/view"/>
+        <wb-resource deploy-path="/" source-path="/src/java"/>
+        <wb-resource deploy-path="/" source-path="/src/reports"/>
+        <wb-resource deploy-path="/" source-path="/src/ebiz"/>
+    </wb-module>
+</project-modules>

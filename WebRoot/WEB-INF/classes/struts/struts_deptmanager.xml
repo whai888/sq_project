@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="deptmanager" extends="globalResult">
+		<action name="adddept" class="com.sq.action.dept.DeptAction" method="saveDept">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<action name="updatedept" class="com.sq.action.dept.DeptAction" method="updateDept">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<action name="deptlist" class="com.sq.action.dept.DeptAction" method="listDept">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="deptlist">/deptmanager/deptlist.jsp</result>
+		</action>
+		<action name="deptfindvo" class="com.sq.action.dept.DeptAction" method="findUpdateId">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="deptupdate">/deptmanager/deptupdate.jsp</result>
+		</action>
+	</package>
+</struts>

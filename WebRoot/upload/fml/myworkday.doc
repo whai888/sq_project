@@ -1,0 +1,1128 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=x-cp20936">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="myworkday.files/filelist.xml">
+<title>项目周报</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>MK</o:Author>
+  <o:Template>附件二：开发人员工作周报.dot</o:Template>
+  <o:LastAuthor>微软用户</o:LastAuthor>
+  <o:Revision>28</o:Revision>
+  <o:TotalTime>16</o:TotalTime>
+  <o:LastPrinted>2012-12-06T12:04:00Z</o:LastPrinted>
+  <o:Created>2012-12-06T10:31:00Z</o:Created>
+  <o:LastSaved>2012-12-20T01:09:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>53</o:Words>
+  <o:Characters>305</o:Characters>
+  <o:Company>SQ-SOFT</o:Company>
+  <o:Lines>2</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>357</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+ <o:CustomDocumentProperties>
+  <o:KSOProductBuildVer dt:dt="string">2052-8.1.0.2998</o:KSOProductBuildVer>
+ </o:CustomDocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas>false</w:ValidateAgainstSchemas>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotUnderlineInvalidXML/>
+  <w:Compatibility>
+   <w:SpaceForUL/>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotLeaveBackslashAlone/>
+   <w:ULTrailSpace/>
+   <w:DoNotExpandShiftReturn/>
+   <w:AdjustLineHeightInTable/>
+   <w:SnapToGridInCell/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:楷体_GB2312;
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@楷体_GB2312";
+	panose-1:2 1 6 9 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:楷体_GB2312;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.0pt;
+	mso-bidi-font-weight:bold;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"页眉 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	border:none;
+	mso-border-bottom-alt:solid windowtext .75pt;
+	padding:0cm;
+	mso-padding-alt:0cm 0cm 1.0pt 0cm;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:楷体_GB2312;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.0pt;
+	mso-bidi-font-weight:bold;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"页脚 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:楷体_GB2312;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.0pt;
+	mso-bidi-font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-parent:"";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.Char
+	{mso-style-name:"页眉 Char";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:页眉;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:楷体_GB2312;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:black;
+	mso-font-kerning:1.0pt;
+	mso-bidi-font-weight:bold;}
+span.Char0
+	{mso-style-name:"页脚 Char";
+	mso-style-locked:yes;
+	mso-style-parent:"";
+	mso-style-link:页脚;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:楷体_GB2312;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:black;
+	mso-font-kerning:1.0pt;
+	mso-bidi-font-weight:bold;}
+p.ParaCharCharCharCharCharCharCharCharChar1CharCharCharChar, li.ParaCharCharCharCharCharCharCharCharChar1CharCharCharChar, div.ParaCharCharCharCharCharCharCharCharChar1CharCharCharChar
+	{mso-style-name:"默认段落字体 Para Char Char Char Char Char Char Char Char Char1 Char Char Char Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:宋体;
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:1.0pt;}
+p.Char1, li.Char1, div.Char1
+	{mso-style-name:Char;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:10.5pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+span.Char2
+	{mso-style-name:"正文 + 加粗 Char\,两端对齐 Char\,行距\: 1\.5 倍行距 Char";
+	mso-style-locked:yes;
+	mso-style-link:"正文 + 加粗\,两端对齐\,行距\: 1\.5 倍行距";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:楷体_GB2312;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:black;
+	mso-font-kerning:1.0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+p.a, li.a, div.a
+	{mso-style-name:"正文 + 加粗\,两端对齐\,行距\: 1\.5 倍行距";
+	mso-style-link:"正文 + 加粗 Char\,两端对齐 Char\,行距\: 1\.5 倍行距 Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:楷体_GB2312;
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.textitem
+	{mso-style-name:textitem;}
+span.pathleafnode1
+	{mso-style-name:pathleafnode1;
+	mso-style-parent:"";
+	font-family:Tahoma;
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;
+	color:#336699;
+	font-weight:bold;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 28.3pt 72.0pt 89.85pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:8;
+	mso-list-template-ids:8;}
+@list l0:level1
+	{mso-level-text:%1．;
+	mso-level-tab-stop:66.75pt;
+	mso-level-number-position:left;
+	margin-left:66.75pt;
+	text-indent:-42.75pt;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%2\)";
+	mso-level-tab-stop:66.0pt;
+	mso-level-number-position:left;
+	margin-left:66.0pt;
+	text-indent:-21.0pt;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:87.0pt;
+	mso-level-number-position:right;
+	margin-left:87.0pt;
+	text-indent:-21.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	margin-left:108.0pt;
+	text-indent:-21.0pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%5\)";
+	mso-level-tab-stop:129.0pt;
+	mso-level-number-position:left;
+	margin-left:129.0pt;
+	text-indent:-21.0pt;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:150.0pt;
+	mso-level-number-position:right;
+	margin-left:150.0pt;
+	text-indent:-21.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:171.0pt;
+	mso-level-number-position:left;
+	margin-left:171.0pt;
+	text-indent:-21.0pt;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%8\)";
+	mso-level-tab-stop:192.0pt;
+	mso-level-number-position:left;
+	margin-left:192.0pt;
+	text-indent:-21.0pt;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:213.0pt;
+	mso-level-number-position:right;
+	margin-left:213.0pt;
+	text-indent:-21.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:网格型;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="9218"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ZH-CN link=blue vlink=purple style='tab-interval:21.0pt;
+text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+style='font-size:22.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+Arial'>开发人员工作周报</span></b><b><span lang=EN-US style='font-size:22.0pt;
+line-height:150%'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+lang=EN-US style='font-size:22.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+mso-ascii-font-family:Arial'>姓名：</span></b><span class=Char2><span lang=EN-US
+style='font-family:楷体_GB2312;mso-bidi-font-family:"Times New Roman"'>$USERNAME$</span></span><b><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><span
+style='mso-spacerun:yes'>&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><b><span
+style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+mso-ascii-font-family:Arial'>所在项目组：</span></b><b><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312'>$GROUPNAME$</span></b><b><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><span
+style='mso-spacerun:yes'>&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><b><span
+style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+mso-ascii-font-family:Arial'>周报日期：</span></b><b><span lang=EN-US
+style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312'>$WOKRDATE$</span></b><b><span
+lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+
+<div align=center>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>本</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='font-size:14.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='font-size:14.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:14.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>工作完成情况</span></b><b><span lang=EN-US style='font-size:14.0pt;
+  line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='font-size:14.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>周</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>序号</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>项目名称</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>工作任务</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>完成情况</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>工</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>作</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>小</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:14.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>未</span></b><b><span lang=EN-US style='font-size:14.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:14.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>完成</span></b><b><span lang=EN-US style='font-size:14.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:14.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>工作情况及说</span></b><b><span lang=EN-US style='font-size:14.0pt;
+  line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:14.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>明</span></b><b><span lang=EN-US style='font-size:14.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>结</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>序号</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>项目名称</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>工作任务说明</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:15.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>下</span></b><b><span lang=EN-US style='font-size:15.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>序号</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>工作事项</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;height:40.95pt'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:40.95pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:15.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>周</span></b><b><span lang=EN-US style='font-size:15.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.95pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.95pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.95pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:40.95pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:15.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>工</span></b><b><span lang=EN-US style='font-size:15.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:15.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>作</span></b><b><span lang=EN-US style='font-size:15.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>序号</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><span
+  class=GramE><b><span style='mso-bidi-font-size:12.0pt;line-height:150%;
+  font-family:楷体_GB2312;mso-ascii-font-family:Arial'>待协调</span></b></span><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>及解决事项说明</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:15.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>计</span></b><b><span lang=EN-US style='font-size:15.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:15.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>划</span></b><b><span lang=EN-US style='font-size:15.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>工</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>作</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>序号</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='mso-bidi-font-size:12.0pt;line-height:150%;font-family:楷体_GB2312;
+  mso-ascii-font-family:Arial'>工作建议</span></b><b><span lang=EN-US
+  style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;background:silver;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  lang=EN-US style='mso-bidi-font-size:12.0pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>建</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16;mso-yfti-lastrow:yes'>
+  <td width="10%" style='width:10.32%;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:150%'><b><span
+  style='font-size:16.0pt;line-height:150%;font-family:楷体_GB2312;mso-ascii-font-family:
+  Arial'>议</span></b><b><span lang=EN-US style='font-size:16.0pt;line-height:
+  150%'><o:p></o:p></span></b></p>
+  </td>
+  <td width="9%" valign=top style='width:9.22%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="24%" valign=top style='width:24.5%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="37%" valign=top style='width:37.7%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+  <td width="18%" valign=top style='width:18.26%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='line-height:150%'><b><span lang=EN-US
+  style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-indent:21.1pt;mso-char-indent-count:2.0;
+line-height:150%'><b><span lang=EN-US style='font-size:10.5pt;line-height:150%'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:21.1pt;mso-char-indent-count:2.0;
+line-height:150%'><b><span style='font-size:10.5pt;line-height:150%;font-family:
+楷体_GB2312;mso-ascii-font-family:Arial'>填表说明：</span></b><b><span lang=EN-US
+style='font-size:10.5pt;line-height:150%'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:66.75pt;text-indent:-42.75pt;line-height:
+150%;mso-list:l0 level1 lfo2;tab-stops:list 66.75pt'><![if !supportLists]><span
+lang=EN-US style='font-size:10.5pt;line-height:150%;mso-fareast-font-family:
+Arial;mso-bidi-font-family:Arial'><span style='mso-list:Ignore'>1．<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.5pt;line-height:150%;
+font-family:楷体_GB2312;mso-ascii-font-family:Arial'>“项目名称”请与合同的名称相一致。项目包括已经签署合同和暂时还没有签署合同但已经开始进行设计和开发的项目。没有签署合同的项目名称应与工作量评估报告的名称相一致。不要用业务名称来描述“项目名称”。</span><span
+lang=EN-US style='font-size:10.5pt;line-height:150%'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

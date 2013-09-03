@@ -1,0 +1,20 @@
+body {margin-top: 0px;margin-bottom:0px;font-size: 12px;}
+img{border:0px;}
+.fontcolor1 {color: #707070;}
+.fontcolor2 {color: #0a6e0c; }
+.fontbold{font-weight:bold;}
+.fontcenter{text-align:center;}
+.fontleft{text-align:left;}
+.fontright{text-align:right;}
+.bgcolor1 {background-color:#FFFFFF; }
+#btn{margin-left:30px;height:25px; margin-right:28px; text-align:center;}
+#btn a{display:block; line-height:25px; background: url(../images/bt_bg.gif); border: solid 1px #b6b6b6; float:left; padding-left:12px; padding-right:12px; text-decoration:none; color:#000;}
+#backgroundPopup{display:none;position:fixed;_position:absolute; /* hack for internet explorer 6*/height:100%;width:100%;top:0;left:0;background:#000000;border:1px solid #cecece;z-index:1;}
+#popupContact{display:none;position:fixed;background:#FFFFFF;border:2px solid #cecece;z-index:2;padding:12px;font-size:13px;_position:absolute; /* hack for internet explorer 6*/}
+#popupContactClose{font-size:14px;line-height:14px;right:6px;top:4px;position:absolute;cursor:pointer;color:#6fa5fd;font-weight:700;display:block;}
+#popupContact h1{text-align:left;color:#6FA5FD;font-size:22px;font-weight:700;border-bottom:1px dotted #D3D3D3;padding-bottom:2px;margin-bottom:20px;}
+#workviewtab td{border-left: 1px solid #000;border-bottom: 1px solid #000;}
+#workviewtab #workviewtitlehead{height:42px;}
+#workviewtab {border-right:1px solid #000;border-top:1px solid #000}
+#workviewtabhead td{border-left: 1px solid #000;border-top: 1px solid #000; }
+#workviewtabhead {border-right:1px solid #000;}

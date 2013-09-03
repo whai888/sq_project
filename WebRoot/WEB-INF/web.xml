@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:spring/*.xml</param-value>
+	</context-param>
+	<context-param>
+    <description>Flag whether the report resources can only be accessed under the working folder. Defaults to false</description>
+    <param-name>WORKING_FOLDER_ACCESS_ONLY</param-name>
+    <param-value>false</param-value>
+  </context-param>
+  <context-param>
+    <description>Temporary document files directory. Defaults to ${Context Root}/documents</description>
+    <param-name>BIRT_VIEWER_DOCUMENT_FOLDER</param-name>
+    <param-value>WEB-INF/report-engine/documents</param-value>
+  </context-param>
+  <context-param>
+    <description>Flag whether to allow server-side printing. Possible values are ON and OFF. Defaults to ON</description>
+    <param-name>BIRT_VIEWER_PRINT_SERVERSIDE</param-name>
+    <param-value>ON</param-value>
+  </context-param>
+  <context-param>
+    <description>Memory size in MB for creating a cube.</description>
+    <param-name>BIRT_VIEWER_CUBE_MEMORY_SIZE</param-name>
+    <param-value />
+  </context-param>
+  <context-param>
+    <description>Directory where to store all the birt report script libraries (JARs).. Defaults to ${Context Root}/scriptlib</description>
+    <param-name>BIRT_VIEWER_SCRIPTLIB_DIR</param-name>
+    <param-value>WEB-INF/report-engine/scriptlib</param-value>
+  </context-param>
+  <context-param>
+    <description>Temporary images/charts directory. Defaults to ${Context Root}/report/images</description>
+    <param-name>BIRT_VIEWER_IMAGE_DIR</param-name>
+    <param-value>WEB-INF/report-engine/images</param-value>
+  </context-param>
+  <context-param>
+    <description>BIRT viewer extended configuration file</description>
+    <param-name>BIRT_VIEWER_CONFIG_FILE</param-name>
+    <param-value>WEB-INF/report-engine/viewer.properties</param-value>
+  </context-param>
+  <context-param>
+    <description>Preview report rows limit. An empty value means no limit.</description>
+    <param-name>BIRT_VIEWER_MAX_ROWS</param-name>
+    <param-value />
+  </context-param>
+  <context-param>
+    <description>Max cube fetch rows levels limit for report preview (Only used when previewing a report design file using the preview pattern). Defaults to return all levels</description>
+    <param-name>BIRT_VIEWER_MAX_CUBE_ROWLEVELS</param-name>
+    <param-value />
+  </context-param>
+  <context-param>
+    <description>Default locale setting</description>
+    <param-name>BIRT_VIEWER_LOCALE</param-name>
+    <param-value>en-US</param-value>
+  </context-param>
+  <context-param>
+    <description>Max cube fetch columns levels limit for report preview (Only used when previewing a report design file using the preview pattern). Defaults to return all levels</description>
+    <param-name>BIRT_VIEWER_MAX_CUBE_COLUMNLEVELS</param-name>
+    <param-value />
+  </context-param>
+  <context-param>
+    <description>Report resources(design files or document files) directory for preview. Defaults to ${Context Root}</description>
+    <param-name>BIRT_VIEWER_WORKING_FOLDER</param-name>
+    <param-value />
+  </context-param>
+  <context-param>
+    <description>Report Engine logs directory. Default to ${Context Root}/logs</description>
+    <param-name>BIRT_VIEWER_LOG_DIR</param-name>
+    <param-value>WEB-INF/report-engine/logs</param-value>
+  </context-param>
+  <context-param>
+    <description>Resource location directory (library files, images files or others). Defaults to ${Context Root}</description>
+    <param-name>BIRT_RESOURCE_PATH</param-name>
+    <param-value />
+  </context-param>
+  <context-param>
+    <description>Flag whether to force browser-optimized HTML output. Defaults to true</description>
+    <param-name>HTML_ENABLE_AGENTSTYLE_ENGINE</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <context-param>
+    <description>Report engine log level. (ALL|SEVERE|WARNING|INFO|CONFIG|FINE|FINER|FINEST|OFF)</description>
+    <param-name>BIRT_VIEWER_LOG_LEVEL</param-name>
+    <param-value>INFO</param-value>
+  </context-param>
+  <!-- 设置超时时间为30分钟 -->
+  <session-config>
+  	<session-timeout>30</session-timeout>
+  </session-config>
+  <listener>
+  	<listener-class>com.sq.listener.SessionListener</listener-class>
+  </listener>
+	<listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <listener>
+    <listener-class>org.eclipse.birt.report.listener.ViewerHttpSessionListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>org.eclipse.birt.report.listener.ViewerServletContextListener</listener-class>
+  </listener>
+  <filter>
+         <filter-name>BirtFilter</filter-name>
+         <filter-class>com.sq.filter.BirtFilter</filter-class>
+  </filter>
+	  <filter-mapping>
+	         <filter-name>BirtFilter</filter-name>
+	         <url-pattern>/*</url-pattern>
+	  </filter-mapping>
+    <!-- Encoding Filter begin-->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- Encoding Filter end-->
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>
+			org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+			<init-param>
+				<param-name>actionPackages</param-name>
+				<param-value>com.sq.action</param-value>
+			</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<!-- 定义一个JSPSupportServlet,用于freemarker模版的标签的解析 -->
+		<servlet-name>JspSupportServlet</servlet-name>
+		<servlet-class>org.apache.struts2.views.JspSupportServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+  <servlet>
+    <servlet-name>EngineServlet</servlet-name>
+    <servlet-class>org.eclipse.birt.report.servlet.BirtEngineServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>ViewerServlet</servlet-name>
+    <servlet-class>org.eclipse.birt.report.servlet.ViewerServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.sq.reports.servlet.InitServlet</servlet-class>
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ViewerServlet</servlet-name>
+    <url-pattern>/frameset</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EngineServlet</servlet-name>
+    <url-pattern>/document</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EngineServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EngineServlet</servlet-name>
+    <url-pattern>/parameter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EngineServlet</servlet-name>
+    <url-pattern>/extract</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewerServlet</servlet-name>
+    <url-pattern>/run</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EngineServlet</servlet-name>
+    <url-pattern>/preview</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EngineServlet</servlet-name>
+    <url-pattern>/output</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/servlet/InitServlet</url-pattern>
+  </servlet-mapping>
+  <jsp-config>
+    <taglib>
+      <taglib-uri>/birt.tld</taglib-uri>
+      <taglib-location>/WEB-INF/report-engine/tlds/birt.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+  <resource-ref>
+        <description>MySql DataSource</description>
+        <res-ref-name>project</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+    <!--<error-page>
+    <error-code>404</error-code>
+    <location>/pub/404.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/pub/500.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>403</error-code>
+    <location>/pub/403.jsp</location>
+  </error-page>
+  --><welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
+

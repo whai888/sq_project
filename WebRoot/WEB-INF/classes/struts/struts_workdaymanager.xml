@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="workdaymanager" extends="globalResult">
+		<!-- 日报及周报信息查询 -->
+		<action name="workdaylist" class="com.sq.action.workday.WorkDayAction" method="workDayList">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="workdaylist">/workdaymanager/workdayquerylist.jsp</result>
+			<result name="weekdaylist">/workdaymanager/weekdaylist.jsp</result>
+			<result name="deptweekdaylist">/workdaymanager/deptweekdaylist.jsp</result>
+			<result name="myworkview">/workdaymanager/myworkview.jsp</result>
+			<result name="noworkview">/workdaymanager/noworkview.jsp</result>
+			<result name="autoworkdaylist">/workdaymanager/workdayautoquerylist.jsp</result>
+		</action>
+		<!-- 我的日报 -->
+		<action name="myworkdayeditlist" class="com.sq.action.workday.WorkDayAction" method="myworkDayEditList">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="myworkdayeditlist">/workdaymanager/myworkdayeditlist.jsp</result>
+		</action>
+		<!-- 我的周报预览 -->
+		<action name="myworkview" class="com.sq.action.workday.WorkDayAction" method="myWorkView">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="myworkview">/workdaymanager/myworkview.jsp</result>
+		</action>
+		<!-- 提交我的日报 -->
+		<action name="myworksub" class="com.sq.action.workday.WorkDayAction" method="myWorkSub">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworksub">myworkdayeditlist</result>
+		</action>
+		<!-- 项目周报预览 -->
+		<action name="projectworkview" class="com.sq.action.workday.WorkDayAction" method="projectWorkView">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="projectworkview">/workdaymanager/projectworkview.jsp</result>
+		</action>
+		<!-- 项目组周报预览 -->
+		<action name="groupworkview" class="com.sq.action.workday.WorkDayAction" method="groupWorkView">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="groupworkview">/workdaymanager/groupworkview.jsp</result>
+			<!-- growthgrouplist生成项目组周报明细 -->
+			<result name="growthgrouplist">/workdaymanager/growthgrouplist.jsp</result>
+		</action>
+		<!-- 添加我的日报 -->
+		<action name="myworkdayeditadd" class="com.sq.action.workday.WorkDayAction" method="myworkDayEditAdd">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkdayeditadd">myworkdayeditlist</result>
+		</action>
+		<!-- 修改查询我的日报查询 -->
+		<action name="myworkdayeditupdatefind" class="com.sq.action.workday.WorkDayAction" method="myworkDayEditUpdateFind">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="myworkdayeditupdatefind">/workdaymanager/myworkdayeditlist.jsp</result>
+		</action>
+		<!-- 我的日报详细信息查询 -->
+		<action name="workdayquerylistinfo" class="com.sq.action.workday.WorkDayAction" method="workDayQueryListInfo">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="workdayquerylistinfo">/workdaymanager/workdayquerylistinfo.jsp</result>
+			<result name="workproquerylistinfo">/workdaymanager/workdayprojectlistinfo.jsp</result>
+		</action>
+		<!-- 修改我的日报 -->
+		<action name="myworkdayeditupdate" class="com.sq.action.workday.WorkDayAction" method="myworkDayEditUpdate">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkdayeditupdate">myworkdayeditlist</result>
+		</action>
+		<!-- 删除我的日报 -->
+		<action name="myworkdayeditdelete" class="com.sq.action.workday.WorkDayAction" method="myworkDayEditDelete">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkdayeditdelete">myworkdayeditlist</result>
+		</action>
+		<!-- 生成项目周报查询 -->
+		<action name="workdayauditlist" class="com.sq.action.workday.WorkDayAction" method="workDayAuditList">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="workdayauditlist">/workdaymanager/workdayauditlist.jsp</result>
+		</action>
+		<!-- 项目报告提交查询-->
+		<action name="workdayproeditlist" class="com.sq.action.workday.WorkDayAction" method="workDayProjectReport">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="workdayproeditlist">/workdaymanager/workdayprojectreport.jsp</result>
+		</action>
+		<!-- 项目组周报提交查询-->
+		<action name="groupworkdaylist" class="com.sq.action.workday.WorkDayAction" method="workDayGroupReport">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="groupworkdaylist">/workdaymanager/workdaygroupreport.jsp</result>
+		</action>
+		<!-- 项目报告提交-->
+		<action name="workdayproeditadd" class="com.sq.action.workday.WorkDayAction" method="workDayProjectAdd">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="workdayproeditadd">workdayproeditlist</result>
+		</action>
+		<!-- 提交项目周报-->
+		<action name="projectworksub" class="com.sq.action.workday.WorkDayAction" method="projectWorkSub">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="projectworksub">workdayproeditlist</result>
+		</action>
+		<!-- 项目组周报提交-->
+		<action name="workdaygroupeditadd" class="com.sq.action.workday.WorkDayAction" method="workDayGroupAdd">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="workdaygroupeditadd">groupworkdaylist</result>
+		</action>
+		<!-- 提交项目组周报-->
+		<action name="groupworksub" class="com.sq.action.workday.WorkDayAction" method="groupWorkSub">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="groupworksub">groupworkdaylist</result>
+		</action>
+		<!-- 修改查询我的项目查询 -->
+		<action name="myworkprojecteditupdatefind" class="com.sq.action.workday.WorkDayAction" method="myworkProjectEditUpdateFind">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="myworkprojecteditupdatefind">/workdaymanager/workdayprojectreport.jsp</result>
+		</action>
+		<!-- 修改查询项目组日报信息 -->
+		<action name="myworkgroupeditupdatefind" class="com.sq.action.workday.WorkDayAction" method="myworkGroupEditUpdateFind">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="myworkgroupeditupdatefind">/workdaymanager/workdaygroupreport.jsp</result>
+		</action>
+		<!-- 删除我的项目-->
+		<action name="myworkprojecteditdelete" class="com.sq.action.workday.WorkDayAction" method="myworkProjectEditDelete">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkprojecteditdelete">workdayproeditlist</result>
+		</action>
+		<!-- 删除项目组的日报-->
+		<action name="myworkgroupeditdelete" class="com.sq.action.workday.WorkDayAction" method="myworkGroupEditDelete">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkgroupeditdelete">groupworkdaylist</result>
+		</action>
+		<!-- 修改我的项目-->
+		<action name="myworkprojecteditupdate" class="com.sq.action.workday.WorkDayAction" method="myworkProjectEditUpdate">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkprojecteditupdate">workdayproeditlist</result>
+		</action>
+		<!-- 修改项目组周报信息-->
+		<action name="myworkgroupeditupdate" class="com.sq.action.workday.WorkDayAction" method="myworkGroupEditUpdate">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkgroupeditupdate">groupworkdaylist</result>
+		</action>
+		<!-- 项目报告查询-->
+		<action name="workdayprolist" class="com.sq.action.workday.WorkDayAction" method="workDayProjectList">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="workdayprolist">/workdaymanager/workdayprojectlist.jsp</result>
+			<result name="projectworkview">/workdaymanager/projectworkview.jsp</result>
+		</action>
+		<!-- 项目报告查询-->
+		<action name="workdaygrouplist" class="com.sq.action.workday.WorkDayAction" method="workDayGroupList">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="workdaygrouplist">/workdaymanager/workdaygrouplist.jsp</result>
+			<result name="groupworkview">/workdaymanager/groupworkview.jsp</result>
+		</action>
+		<!-- 编辑部门项目信息-->
+		<action name="myworkdeptedit" class="com.sq.action.workday.WorkDayAction" method="myworkDeptEdit">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="myworkdeptedit">/workdaymanager/workdaydeptreport.jsp</result>
+		</action>
+		<!-- 部门周报修改-->
+		<action name="myworkdepteditupdate" class="com.sq.action.workday.WorkDayAction" method="myworkDeptEditUpdate">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkdepteditupdate">myworkdeptedit</result>
+		</action>
+		<!-- 查询修改的部门周报 -->
+		<action name="myworkdepteditupdatefind" class="com.sq.action.workday.WorkDayAction" method="myworkDeptEditUpdateFind">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkdepteditupdatefind">myworkdeptedit</result>
+		</action>
+		<!-- 部门周报删除-->
+		<action name="myworkdepteditdelete" class="com.sq.action.workday.WorkDayAction" method="myworkDeptEditDelete">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="myworkdepteditdelete">myworkdeptedit</result>
+		</action>
+		<!-- 部门周报提交-->
+		<action name="workdaydepteditadd" class="com.sq.action.workday.WorkDayAction" method="workDayDeptAdd">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="workdaydepteditadd">myworkdeptedit</result>
+		</action>
+		<!-- 部门周报预览 -->
+		<action name="deptworkview" class="com.sq.action.workday.WorkDayAction" method="deptWorkView">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="deptworkview">/workdaymanager/deptworkview.jsp</result>
+		</action>
+		<!-- 提交本周部门周报内容-->
+		<action name="deptworksub" class="com.sq.action.workday.WorkDayAction" method="deptWorkSub">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="deptworksub">myworkdeptedit</result>
+		</action>
+		<!-- 生成部门周报查询-->
+		<action name="growthdeptlist" class="com.sq.action.workday.WorkDayAction" method="growthDeptList">
+			<interceptor-ref name="sessioncheck"/>
+			<!-- growthdeptlist生成部门周报明细 -->
+			<result name="growthdeptlist">/workdaymanager/growthdeptlist.jsp</result>
+		</action>
+		<!-- 部门周报报告查询-->
+		<action name="workdaydeptlist" class="com.sq.action.workday.WorkDayAction" method="workDayDeptList">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="workdaydeptlist">/workdaymanager/workdaydeptlist.jsp</result>
+			<result name="deptworkview">/workdaymanager/deptworkview.jsp</result>
+		</action>
+		<!-- 生成周报时全部导出 returnPage:growthdeptlist部门周报全部导出  groupworkview项目组周报全部导出 workdayauditlist 项目周报全部导出 -->
+		<action name="growthlist" class="com.sq.action.workday.WorkDayAction" method="growthList">
+			<interceptor-ref name="sessioncheck"/>
+			<!-- 部门周报全部导出 
+			<result type="chain" name="growthdeptlist">growthdeptlist</result>
+			 项目组周报全部导出 
+			<result type="chain" name="growthgrouplist">groupworkview</result>
+			 项目周报全部导出 
+			<result type="chain" name="growthprolist">workdayauditlist</result>
+		--></action>
+	</package>
+</struts>

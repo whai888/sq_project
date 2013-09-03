@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtmll/DTD/xhtmll-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <title>Demo</title>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<script type="text/javascript" src="http://ditu.google.com/maps?file=api&hl=zh-CN&v=3&key=AIzaSyCC5Nypa8A0ibeCDw2IwytKMYN-HOhlY0o"></script>
+  </head>
+  
+  <body onload="initialize()" onunload="GUnload()">
+    <div id="mapContainer" style="height:400px;width:400px;"></div>
+  </body>
+  <script type="text/javascript">
+<!--
+function initialize() {
+    if (GBrowserIsCompatible()) {
+		var options = {size:GSize(100, 100),mapTypes:[G_NORMAL_MAP,G_SATELLITE_MAP,G_PHYSICAL_MAP], backgroundColor:"#FF0000"};
+		var map = new GMap2(document.getElementById("mapContainer"),options);
+		map.setCenter(new GLatLng(33.0, 106.0), 3);
+    }
+  }
+
+//-->
+</script>
+</html>

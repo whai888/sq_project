@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="userrole" extends="globalResult">
+		<!-- 角色维护查询 -->
+		<action name="rolequery" class="com.sq.action.userrole.UserRoleAction" method="roleQuery">
+			<result type="dispatcher" name="rolequery" >/userrole/rolequery.jsp</result>
+		</action>
+		<!-- 角色新增 -->
+		<action name="roleadd" class="com.sq.action.userrole.UserRoleAction" method="roleAdd">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="roleadd" >/userrole/roleadd.jsp</result>
+		</action>
+		<!-- 角色修改查询 -->
+		<action name="roleupdatequery" class="com.sq.action.userrole.UserRoleAction" method="roleUpdateQuery">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="roleupdatequery" >/userrole/roleupdate.jsp</result>
+		</action>
+		<!-- 角色修改 -->
+		<action name="roleupdate" class="com.sq.action.userrole.UserRoleAction" method="roleUpdate">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<!-- 角色删除 -->
+		<action name="roledelete" class="com.sq.action.userrole.UserRoleAction" method="roleDelete">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="roledelete">rolequery</result>
+		</action>
+		<!-- 角色菜单分配查询 -->
+		<action name="rolemenuquery" class="com.sq.action.userrole.UserRoleAction" method="roleMenuQuery">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="rolemenuquery" >/userrole/rolemenuquery.jsp</result>
+		</action>
+		<!-- 角色菜单分配确认 -->
+		<action name="rolemenuconfirm" class="com.sq.action.userrole.UserRoleAction" method="roleMenuConfirm">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="rolemenuconfirm">rolemenuquery</result>
+		</action>
+		<!-- 角色员工查询 -->
+		<action name="roleuserquery" class="com.sq.action.userrole.UserRoleAction" method="roleUserQuery">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="roleuserquery" >/userrole/usermenulist.jsp</result>
+		</action>
+		<!-- 员工菜单分配查询 -->
+		<action name="usermenuquery" class="com.sq.action.userrole.UserRoleAction" method="userMenuQuery">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="usermenuquery" >/userrole/usermenuquery.jsp</result>
+		</action>
+		<!-- 员工菜单分配确认 -->
+		<action name="usermenuconfirm" class="com.sq.action.userrole.UserRoleAction" method="userMenuConfirm">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="usermenuconfirm">usermenuquery</result>
+		</action>
+		<!-- 员工角色分配查询 -->
+		<action name="userrolequery" class="com.sq.action.userrole.UserRoleAction" method="userRoleQuery">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="userrolequery" >/userrole/userrolequery.jsp</result>
+		</action>
+		<!-- 员工角色分配确认 -->
+		<action name="userroleconfirm" class="com.sq.action.userrole.UserRoleAction" method="userRoleConfirm">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="userroleconfirm">userrolequery</result>
+		</action>
+	</package>
+</struts>

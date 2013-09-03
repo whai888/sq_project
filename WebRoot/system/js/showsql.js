@@ -1,0 +1,3 @@
+function onSub(){
+	$("#jform").submit();
+}

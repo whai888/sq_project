@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<constant name="struts.action.extension" value="shtml" />
+	<!-- 可以按标签访问静态方法 -->
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant> 
+	<!-- 系统公用配置文件 -->
+	<include file="struts/struts_system.xml"></include>
+	<!-- 用户管理配置文件 -->
+	<include file="struts/struts_usermanager.xml"></include>
+	<!-- 部门管理配置文件 -->
+	<include file="struts/struts_deptmanager.xml"></include>
+	<!-- 项目管理配置文件 -->
+	<include file="struts/struts_projectmanager.xml"></include>
+	<!-- 日报管理配置文件 -->
+	<include file="struts/struts_workdaymanager.xml"></include>
+	<!-- 角色权限管理文件 -->
+	<include file="struts/struts_userrole.xml"></include>
+	<!-- 主页主文件 -->
+	<include file="struts/struts_homemanager.xml"></include>
+	<!-- 项目组配置文件 -->
+	<include file="struts/struts_groupmanager.xml"></include>
+	<package name="main" extends="globalResult">
+		<action name="prof_*" class="com.sq.action.system.SQAction" method="sqftl">
+			<result type="freemarker" name="sqftl" >/{1}.ftl</result>
+		</action>
+		<action name="proj_*" class="com.sq.action.system.SQAction" method="sqjsp">
+			<result type="dispatcher" name="sqjsp" >/system/{1}.ftl</result>
+		</action>
+		<action name="updatepwd" class="com.sq.action.user.UserAction" method="updatePwd">
+		</action>
+	</package>
+	
+	<package name="globalResult" extends="struts-default" abstract="true">
+		<interceptors>
+			<!-- session检查 -->
+			<interceptor name="sessioninter" class="com.sq.action.util.LocaleInterceptor"></interceptor>
+			<interceptor-stack name="sessioncheck">
+				<interceptor-ref name="sessioninter"/>
+				<interceptor-ref name="defaultStack"/>
+			</interceptor-stack>
+		</interceptors>
+		
+		<global-results>
+			<result name="error" type="dispatcher">/pub/error.jsp</result>
+			<result name="syserror" type="dispatcher">/pub/systemerror.jsp</result>
+			<result name="success" type="dispatcher">/pub/success.jsp</result>
+			<!-- 重定向到一个url -->
+			<result name="toLogin" type="redirect">/index.jsp</result>
+		</global-results>
+		<!--<global-exception-mappings>
+			<exception-mapping result="syserror" exception="java.lang.Exception"></exception-mapping>
+			<exception-mapping result="error" exception="com.sq.exception.SystemException"></exception-mapping>
+		</global-exception-mappings>
+	--></package>
+</struts>

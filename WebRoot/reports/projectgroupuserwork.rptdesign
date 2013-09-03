@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.21" id="1">
+    <property name="createdBy">MyEclipse Report Designer Version 8.0.0</property>
+    <list-property name="userProperties">
+        <structure>
+            <property name="name">Data Cube.Data Set.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">Data Cube.Data Set.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">Data Cube.projectgroup.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">Data Cube.projectgroup.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+    </list-property>
+    <property name="Data Cube.Data Set.x">135</property>
+    <property name="Data Cube.Data Set.y">80</property>
+    <property name="Data Cube.projectgroup.x">135</property>
+    <property name="Data Cube.projectgroup.y">80</property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="startDate" id="105">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">true</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">2012-01-01</value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="concealValue">false</property>
+            <property name="controlType">text-box</property>
+            <property name="autoSuggestThreshold">1</property>
+            <structure name="format">
+                <property name="category">Medium Date</property>
+                <property name="pattern">Medium Date</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="endDate" id="106">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">true</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">2015-01-01</value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="concealValue">false</property>
+            <property name="controlType">text-box</property>
+            <property name="autoSuggestThreshold">1</property>
+            <structure name="format">
+                <property name="category">Medium Date</property>
+                <property name="pattern">Medium Date</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="groupNo" id="107">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">0002</value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="groupName" id="110">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">温州项目组1</value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <script-data-source name="Data Source" id="112"/>
+    </data-sources>
+    <data-sets>
+        <script-data-set name="projectgroup" id="113">
+            <list-property name="resultSetHints">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">UNNAMED_1</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">project_id</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">project_name</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">user_id</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">user_name</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">UNNAMED_1</property>
+                </structure>
+                <structure>
+                    <property name="columnName">project_id</property>
+                </structure>
+                <structure>
+                    <property name="columnName">project_name</property>
+                </structure>
+                <structure>
+                    <property name="columnName">user_id</property>
+                </structure>
+                <structure>
+                    <property name="columnName">user_name</property>
+                    <text-property name="displayName">user_name</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">groupNo</property>
+                    <property name="dataType">string</property>
+                    <property name="position">1</property>
+                    <expression name="defaultValue" type="constant">0000</expression>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">startDate</property>
+                    <property name="dataType">string</property>
+                    <property name="position">2</property>
+                    <expression name="defaultValue" type="constant">2012-01-01</expression>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">endDate</property>
+                    <property name="dataType">string</property>
+                    <property name="position">3</property>
+                    <expression name="defaultValue" type="constant">2012-01-01</expression>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">groupName</property>
+                    <property name="dataType">string</property>
+                    <property name="position">4</property>
+                    <expression name="defaultValue" type="constant">温州</expression>
+                    <property name="isInput">false</property>
+                    <property name="isOutput">true</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">UNNAMED_1</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">project_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">project_name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">user_id</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">user_name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <method name="open"><![CDATA[factory = new Packages.com.sq.reports.factory.ProjectGroupFactory.getInstance();
+unitsList = factory.getPorjectGroupLst(params["groupNo"].value,params["startDate"].value,params["endDate"].value);
+iterator = unitsList.iterator();]]></method>
+            <method name="fetch"><![CDATA[if(iterator.hasNext() == false){
+	return false;
+}else{
+	var units = iterator.next();
+	row["UNNAMED_1"] = units.getUNNAMED_1();
+	row["project_id"] = units.getProjectId();
+	row["project_name"] = units.getProjectName();
+	row["user_id"] = units.getUserId();
+	row["user_name"] = units.getUserName();
+	return true;
+}]]></method>
+            <method name="close"><![CDATA[units = null; 
+iterator = null; 
+unitsList = null; 
+factory=null;]]></method>
+        </script-data-set>
+    </data-sets>
+    <cubes>
+        <tabular-cube name="Data Cube" id="9">
+            <property name="dimensions">
+                <tabular-dimension name="Group" id="10">
+                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy" id="11">
+                            <property name="levels">
+                                <tabular-level name="project_name" id="12">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">project_name</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+                <tabular-dimension name="Group1" id="13">
+                    <property name="defaultHierarchy">NewTabularHierarchy1</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy1" id="14">
+                            <property name="levels">
+                                <tabular-level name="user_name" id="15">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">user_name</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+            </property>
+            <property name="measureGroups">
+                <tabular-measure-group name="Summary Field" id="16">
+                    <property name="measures">
+                        <tabular-measure name="UNNAMED_1" id="43">
+                            <property name="function">sum</property>
+                            <expression name="measureExpression" type="javascript">dataSetRow["UNNAMED_1"]</expression>
+                            <property name="dataType">float</property>
+                        </tabular-measure>
+                    </property>
+                </tabular-measure-group>
+            </property>
+            <property name="dataSet">projectgroup</property>
+        </tabular-cube>
+    </cubes>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-header>
+                <data id="109">
+                    <property name="fontSize">14pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="textAlign">center</property>
+                    <list-property name="boundDataColumns">
+                        <structure>
+                            <property name="name">从*到*项目组人员工作分布</property>
+                            <expression name="expression" type="javascript">params["startDate"].value+"到"+params["endDate"].value+params["groupName"].value+"人员工作分布"</expression>
+                            <property name="dataType">string</property>
+                        </structure>
+                    </list-property>
+                    <property name="resultSetColumn">从*到*项目组人员工作分布</property>
+                </data>
+            </page-header>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <extended-item extensionName="Crosstab" extensionVersion="2.5.0" id="46">
+            <property name="measures">
+                <extended-item extensionName="MeasureView" id="78">
+                    <property name="measure">UNNAMED_1</property>
+                    <property name="detail">
+                        <extended-item extensionName="AggregationCell" id="79">
+                            <property name="aggregationOnRow">Group/project_name</property>
+                            <property name="aggregationOnColumn">Group1/user_name</property>
+                            <property name="paddingTop">0pt</property>
+                            <property name="paddingBottom">0pt</property>
+                            <property name="content">
+                                <data id="98">
+                                    <property name="textAlign">center</property>
+                                    <property name="resultSetColumn">UNNAMED_1_Group/project_name_Group1/user_name_2</property>
+                                </data>
+                            </property>
+                            <property name="height">30pt</property>
+                            <property name="width">339px</property>
+                        </extended-item>
+                    </property>
+                    <property name="aggregations">
+                        <extended-item extensionName="AggregationCell" id="85">
+                            <property name="aggregationOnColumn">Group1/user_name</property>
+                            <property name="content">
+                                <data id="86">
+                                    <property name="textAlign">center</property>
+                                    <method name="onRender"><![CDATA[v1 = this.getValue();]]></method>
+                                    <property name="resultSetColumn">UNNAMED_1_Group1/user_name</property>
+                                </data>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="AggregationCell" id="89">
+                            <property name="aggregationOnRow">Group/project_name</property>
+                            <property name="paddingTop">0pt</property>
+                            <property name="paddingBottom">0pt</property>
+                            <property name="content">
+                                <data id="90">
+                                    <property name="textAlign">center</property>
+                                    <property name="resultSetColumn">UNNAMED_1_Group/project_name</property>
+                                </data>
+                            </property>
+                            <property name="width">116px</property>
+                        </extended-item>
+                        <extended-item extensionName="AggregationCell" id="91">
+                            <property name="content">
+                                <data id="92">
+                                    <property name="textAlign">center</property>
+                                    <property name="resultSetColumn">UNNAMED_1</property>
+                                </data>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="header">
+                        <extended-item extensionName="CrosstabCell" id="81">
+                            <property name="content">
+                                <data id="83">
+                                    <property name="textAlign">center</property>
+                                    <property name="resultSetColumn">Column Binding</property>
+                                </data>
+                            </property>
+                        </extended-item>
+                        <extended-item extensionName="CrosstabCell" id="93">
+                            <property name="textAlign">center</property>
+                        </extended-item>
+                    </property>
+                </extended-item>
+                <extended-item extensionName="ComputedMeasureView" name="百分比" id="99">
+                    <property name="detail">
+                        <extended-item extensionName="AggregationCell" id="100">
+                            <property name="aggregationOnRow">Group/project_name</property>
+                            <property name="aggregationOnColumn">Group1/user_name</property>
+                            <property name="content">
+                                <data name="百分比1" id="104">
+                                    <property name="textAlign">center</property>
+                                    <method name="onRender"><![CDATA[this.setDisplayValue(this.getValue()*100+"%")]]></method>
+                                    <property name="resultSetColumn">百分比</property>
+                                </data>
+                            </property>
+                            <property name="width">222px</property>
+                        </extended-item>
+                    </property>
+                    <property name="aggregations">
+                        <extended-item extensionName="AggregationCell" id="101">
+                            <property name="aggregationOnColumn">Group1/user_name</property>
+                        </extended-item>
+                    </property>
+                    <property name="header">
+                        <extended-item extensionName="CrosstabCell" id="102">
+                            <property name="content">
+                                <label id="103">
+                                    <property name="textAlign">center</property>
+                                    <text-property name="text">百分比</text-property>
+                                </label>
+                            </property>
+                        </extended-item>
+                    </property>
+                </extended-item>
+            </property>
+            <property name="rows">
+                <extended-item extensionName="CrosstabView" id="48">
+                    <property name="grandTotal">
+                        <extended-item extensionName="CrosstabCell" id="84">
+                            <property name="content">
+                                <label id="87">
+                                    <text-property name="text">合计</text-property>
+                                </label>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="49">
+                            <property name="dimension">Group</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View" id="50">
+                                    <property name="level">Group/project_name</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="51">
+                                            <property name="content">
+                                                <data name="project_name" id="52">
+                                                    <property name="resultSetColumn">project_name</property>
+                                                </data>
+                                            </property>
+                                            <property name="paddingTop">0pt</property>
+                                            <property name="paddingBottom">0pt</property>
+                                            <property name="width">188px</property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="grandTotalLocation">after</property>
+                </extended-item>
+            </property>
+            <property name="columns">
+                <extended-item extensionName="CrosstabView" id="53">
+                    <property name="grandTotal">
+                        <extended-item extensionName="CrosstabCell" id="88">
+                            <property name="content">
+                                <label id="95">
+                                    <text-property name="text">合计</text-property>
+                                </label>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="views">
+                        <extended-item extensionName="DimensionView" id="54">
+                            <property name="dimension">Group1</property>
+                            <property name="levels">
+                                <extended-item extensionName="LevelView" name="NewLevel View1" id="55">
+                                    <property name="level">Group1/user_name</property>
+                                    <property name="member">
+                                        <extended-item extensionName="CrosstabCell" id="56">
+                                            <property name="content">
+                                                <data name="user_name" id="57">
+                                                    <property name="fontWeight">bold</property>
+                                                    <property name="textAlign">center</property>
+                                                    <property name="resultSetColumn">user_name</property>
+                                                </data>
+                                            </property>
+                                        </extended-item>
+                                    </property>
+                                </extended-item>
+                            </property>
+                        </extended-item>
+                    </property>
+                    <property name="grandTotalLocation">after</property>
+                </extended-item>
+            </property>
+            <property name="header">
+                <extended-item extensionName="CrosstabCell" id="47"/>
+            </property>
+            <property name="cube">Data Cube</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">project_name</property>
+                    <expression name="expression">dimension["Group"]["project_name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">user_name</property>
+                    <expression name="expression">dimension["Group1"]["user_name"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">UNNAMED_1_Group/project_name_Group1/user_name</property>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group/project_name</value>
+                        <value>Group1/user_name</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">measure["UNNAMED_1"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+                <structure>
+                    <property name="name">UNNAMED_1_Group1/user_name</property>
+                    <text-property name="displayName">列合计总和</text-property>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group1/user_name</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">measure["UNNAMED_1"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+                <structure>
+                    <property name="name">UNNAMED_1_Group/project_name</property>
+                    <text-property name="displayName">行合计总和</text-property>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group/project_name</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">measure["UNNAMED_1"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+                <structure>
+                    <property name="name">UNNAMED_1</property>
+                    <text-property name="displayName">总和</text-property>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                    <list-property name="arguments">
+                        <structure>
+                            <property name="name">Expression</property>
+                            <expression name="value" type="javascript">measure["UNNAMED_1"]</expression>
+                        </structure>
+                    </list-property>
+                </structure>
+                <structure>
+                    <property name="name">UNNAMED_1_Group/project_name_Group1/user_name_1</property>
+                    <expression name="expression">measure["UNNAMED_1"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group/project_name</value>
+                        <value>Group1/user_name</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">sum</property>
+                </structure>
+                <structure>
+                    <property name="name">UNNAMED_1_Group/project_name_Group1/user_name_2</property>
+                    <expression name="expression">measure["UNNAMED_1"]</expression>
+                    <property name="dataType">float</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>Group/project_name</value>
+                        <value>Group1/user_name</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">百分比</property>
+                    <expression name="expression" type="javascript">BirtMath.round(data["UNNAMED_1_Group/project_name_Group1/user_name_1"]/data["UNNAMED_1_Group1/user_name"],2)</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding</property>
+                    <text-property name="displayName">工作量</text-property>
+                    <expression name="expression" type="javascript">BirtStr.concat("工作量")</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+        </extended-item>
+        <text id="114"/>
+    </body>
+</report>

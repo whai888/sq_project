@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="usermanager" extends="globalResult">
+		<action name="useradd" class="com.sq.action.user.UserAction" method="saveUser">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<action name="useraddfind" class="com.sq.action.user.UserAction" method="saveUserFind">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="useraddfind">/usermanager/useradd.jsp</result>
+		</action>
+		<action name="updateuser" class="com.sq.action.user.UserAction" method="updateUser">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<action name="userlist" class="com.sq.action.user.UserAction" method="listUser">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="userlist">/usermanager/userlist.jsp</result>
+		</action>
+		<action name="userfindvo" class="com.sq.action.user.UserAction" method="findUpdateId">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="userupdate">/usermanager/userupdate.jsp</result>
+		</action>
+		<action name="updatepwdreset" class="com.sq.action.user.UserAction" method="updatePwdReset">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<action name="myinfo" class="com.sq.action.user.UserAction" method="myInfo">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="myinfo">/usermanager/myinfo.jsp</result>
+		</action>
+		<action name="userpopuplist" class="com.sq.action.dept.DeptAction" method="listDept">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="deptlist">/usermanager/userpopuplist.jsp</result>
+		</action>
+		<action name="userpopupchecklist" class="com.sq.action.dept.DeptAction" method="listDept">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="deptlist">/usermanager/userpopupchecklist.jsp</result>
+		</action>
+	</package>
+</struts>
