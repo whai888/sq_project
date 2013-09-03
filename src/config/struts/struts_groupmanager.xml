@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="groupmanager" extends="globalResult">
+		<action name="addgroup" class="com.sq.action.group.GroupAction" method="saveGroup">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<action name="updategroup" class="com.sq.action.group.GroupAction" method="updateGroup">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<action name="grouplist" class="com.sq.action.group.GroupAction" method="listGroup">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="grouplist">/groupmanager/grouplist.jsp</result>
+			<result name="grouplistreports">/reports-jsp/projectgroupuserwork.jsp</result>
+			<result name="groupuserlist">/groupmanager/groupuserlist.jsp</result>
+		</action>
+		<action name="groupfindvo" class="com.sq.action.group.GroupAction" method="findUpdateId">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="groupupdate">/groupmanager/groupupdate.jsp</result>
+		</action>
+	</package>
+</struts>

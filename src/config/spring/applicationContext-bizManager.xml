@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	default-lazy-init="true">
+	<context:annotation-config/>
+	<bean id="isystemService" class="com.sq.logic.system.impl.SystemService"/>
+	<bean id="iPageService" class="com.sq.logic.system.impl.PageService"/>
+	<bean id="iUserLog" class="com.sq.logic.tools.impl.UserLog"/>
+	<bean id="iDeptService" class="com.sq.logic.dept.impl.DeptService"/>
+	<bean id="iGroupService" class="com.sq.logic.group.impl.GroupService"/>
+	<bean id="iUserService" class="com.sq.logic.user.impl.UserService"/>
+	<bean id="iProjectService" class="com.sq.logic.project.impl.ProjectService"/>
+	<bean id="iProjectUserService" class="com.sq.logic.project.impl.ProjectUserService"/>
+	<bean id="iProjectDocService" class="com.sq.logic.project.impl.ProjectDocService"/>
+	<bean id="iWorkDayService" class="com.sq.logic.workday.impl.WorkDayService"/>
+	<bean id="iSystemHomeService" class="com.sq.logic.home.impl.SystemHomeService"/>
+	<bean id="iUserRoleService" class="com.sq.logic.userrole.impl.UserRoleService"/>
+	<bean id="iFndCache" class="com.sq.sys.reload.impl.FndCache"/>
+	<bean id="iSysparaTab" class="com.sq.logic.tools.impl.SysparaTab"/>
+</beans>

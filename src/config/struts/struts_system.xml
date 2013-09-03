@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="system" extends="globalResult">
+		<action name="login" class="com.sq.action.system.LoginAction" method="login">
+			<result type="dispatcher" name="login" >/system/index.jsp</result>
+			<result type="dispatcher" name="modifyPwd" >/usermanager/userupdatepwd.jsp</result>
+		</action>
+		<action name="loginout" class="com.sq.action.system.LoginAction" method="loginOut">
+			<result name="loginout" type="redirect">/index.jsp</result>
+		</action>
+		<action name="menu" class="com.sq.action.system.LoginAction" method="menu">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="menu" >/system/tools.jsp</result>
+		</action>
+	</package>
+	<package name="json" extends="json-default">
+		<action name="tools" class="com.sq.action.system.LoginAction" method="tools">
+			<result type="json" name="tools"></result>
+		</action>
+		<action name="page" class="com.sq.action.system.PageAction" method="execute">
+			<result type="json" name="page"></result>
+		</action>
+		<action name="ajaxHql" class="com.sq.action.system.PageAction" method="ajaxHql">
+			<result type="json" name="ajax"></result>
+		</action>
+		<action name="workday" class="com.sq.action.workday.WorkDayAction" method="isUserSubWork">
+			<result type="json" name="ajax"></result>
+		</action>
+	</package>
+	
+</struts>

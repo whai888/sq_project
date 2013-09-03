@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="projectmanager" extends="globalResult">
+		<action name="addproject" class="com.sq.action.project.ProjectAction" method="saveProject">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<action name="myprojectlist" class="com.sq.action.project.ProjectAction" method="myProjectList">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="myprojectlist">/projectmanager/myprojectlist.jsp</result>
+		</action>
+		<action name="projectfinduser" class="com.sq.action.project.ProjectAction" method="listUser">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="projectfinduser">/projectmanager/projectadd.jsp</result>
+		</action>
+		<action name="projectfindvo" class="com.sq.action.project.ProjectAction" method="findUpdateId">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="myprojectlist">/projectmanager/projectupdate.jsp</result>
+		</action>
+		<action name="projectupdate" class="com.sq.action.project.ProjectAction" method="updateProject">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<action name="projectaddstepinfo" class="com.sq.action.project.ProjectAction" method="projectAddStepInfo">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="projectaddstepinfo">/projectmanager/projectaddstep.jsp</result>
+		</action>
+		<action name="projectaddstep" class="com.sq.action.project.ProjectAction" method="projectAddStep">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="projectaddstepinfo">projectaddstepinfo</result>
+		</action>
+		<action name="projectupdatestep" class="com.sq.action.project.ProjectAction" method="projectUpdateStep">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="projectaddstepinfo">projectaddstepinfo</result>
+		</action>
+		<action name="projectdeletestep" class="com.sq.action.project.ProjectAction" method="projectDeleteStep">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="projectdeletestep">projectaddstepinfo</result>
+		</action>
+		<action name="projectstepfindinfo" class="com.sq.action.project.ProjectAction" method="projectStepfFindInfo">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="projectstepfindinfo">/projectmanager/projectstepfindinfo.jsp</result>
+		</action>
+		<action name="myprojecthistorylist" class="com.sq.action.project.ProjectAction" method="projectAllUser">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="myprojecthistorylist">/projectmanager/myprojecthistorylist.jsp</result>
+		</action>
+		<action name="projectdocfindinfo" class="com.sq.action.project.ProjectAction" method="projectDocFindInfo">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="dispatcher" name="projectdocfindinfo">/projectmanager/projectdocfindinfo.jsp</result>
+		</action>
+		<action name="projectdocupload" class="com.sq.action.project.ProjectDocAction" method="projectDocUpload">
+			<interceptor-ref name="sessioncheck"/>
+			<interceptor-ref name="fileUploadStack">
+				 <!-- 单个文件允许的大小,大小暂设设置为5M  -->
+				<param name="maxinumSize">5242880</param>
+				<!--  允许上传的文件类型 -->
+				<param name="allowedTypesSet">application/doc,application/zip,application/pdf,application/vnd.ms-excel,</param>
+			</interceptor-ref>
+			<result type="chain" name="projectdocupload">projectdocfindinfo</result>
+			<result type="redirectAction" name="myworkdayeditdelete" >myworkdayeditlist</result>
+			<result type="redirectAction" name="workdayproeditlist">workdayproeditlist</result>
+			<result type="redirectAction" name="groupworkdaylist">groupworkdaylist</result>
+		</action>
+		<action name="filedown" class="com.sq.action.project.ProjectDocAction" method="projectDocDown">
+	        <result name="success" type="stream">
+	            <param name="contentType">application/octet-stream;charset=UTF-8</param>  
+		        <param name="contentDisposition">attachment;filename="${filenameInCN}"</param>  
+		        <param name="inputName">downloadFile</param>  
+	            <param name="bufferSize">4096</param>
+	        </result>
+        </action>
+        <action name="workdayfiledown" class="com.sq.action.project.ProjectDocAction" method="workDayDocDown">
+	        <result name="success" type="stream">
+	            <param name="contentType">application/octet-stream;charset=UTF-8</param>  
+		        <param name="contentDisposition">attachment;filename="${filenameInCN}"</param>  
+		        <param name="inputName">workDayDownloadFile</param>  
+	            <param name="bufferSize">4096</param>
+	        </result>
+        </action>
+		<!-- 根据文档编号删除对应的文档 -->
+		<action name="projectdocfiledelete" class="com.sq.action.project.ProjectDocAction" method="deleteDocManager">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="redirectAction" name="projectdocfiledelete" >myworkdayeditlist</result>
+			<result type="redirectAction" name="workdayproeditdelete">workdayproeditlist</result>
+			<result type="redirectAction" name="myworkdeptedit">myworkdeptedit</result>
+		</action>
+		<action name="projectdocupdate" class="com.sq.action.project.ProjectDocAction" method="projectDocUpdate">
+			<interceptor-ref name="sessioncheck"/>
+			<result type="chain" name="projectdocupload">projectdocfindinfo</result>
+		</action>
+	</package>
+</struts>

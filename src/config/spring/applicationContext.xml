@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-lazy-init="false">
+	<!--main applicationContext file-->
+	<bean id="fndCache" class="com.sq.sys.reload.impl.FndCache" ></bean>
+	
+	<!-- 定时器配置 -->
+	<bean id="weekDayJobDetailQuartzService" class="com.sq.time.WeekDateJobBean"/> 
+	
+	<bean name="quartzScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="weekDateTime"/>
+            </list>
+        </property>
+        <property name="configLocation" value="classpath:com/sq/time/quartz.properties"/>
+    </bean>
+
+	<!-- ============= 1. Cancel PNRs for not payed orders  =================== -->
+	<bean id="weekDateTime" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="weekDayJobDetail"/>
+         <!--定时器设定(0(秒) 59(分) 23(小时) *(日期) *(月份) MON(星期) 每天23:59触发一次)-->
+        <property name="cronExpression" value="0 59 23 ? * MON"/>
+    </bean>    
+    <bean id="weekDayJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="weekDayJobDetailQuartzService"/>
+        <property name="targetMethod" value="weekDateTime"/>
+		<property name="concurrent"><value>false</value></property>
+    </bean>
+</beans>

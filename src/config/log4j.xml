@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern"
+                value="[project] %-d{yyyy-MM-dd HH:mm:ss} %p [%t] %c{1}.%M(%L) | %m%n"/>
+        </layout>
+    </appender>
+     
+    <appender name="APPLOGFILE" class="org.apache.log4j.RollingFileAppender">
+        <param name="encoding" value="UTF-8" />
+	    <param name="File" value="d:/log/sys.log" />
+	    <param name="Append" value="true" />
+	    <param name="MaxFileSize" value="3000KB" />
+	    <layout class="org.apache.log4j.PatternLayout">
+	      <param name="ConversionPattern" value="[project] %d{DATE} %-5p %-15c{1}: %m%n"/>
+	    </layout>
+   </appender>
+    
+    
+    <logger name="net.sf.ehcache">
+        <level value="ERROR"/>
+    </logger>
+
+    <logger name="org.apache">
+        <level value="INFO"/>
+    </logger>
+
+    <logger name="org.apache.velocity">
+        <level value="FATAL"/>
+    </logger>
+
+    <logger name="org.hibernate">
+        <level value="INFO"/>
+    </logger>
+  
+    <logger name="org.hibernate.SQL">
+        <level value="INFO"/>
+    </logger>
+
+   
+    <logger name=" org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <level value="INFO"/>
+    </logger>
+    
+    <logger name="org.springframework.security">
+        <level value="INFO"/>
+    </logger>
+    
+     <logger name="org.springframework">
+        <level value="INFO"/>
+    </logger>
+    
+    <logger name="com.htsoft">
+        <level value="INFO"/>
+    </logger>
+    <logger name="com.interceptor">
+        <level value="INFO"/>
+    </logger>
+    
+    <logger name="org.apache.struts2">
+        <level value="INFO"/>
+    </logger>
+	
+    <logger name="org.springframework.ui.velocity">
+        <level value="WARN"/>
+    </logger>
+	 
+	<logger name="org.apache.catalina">
+		<level value="INFO"/>
+	</logger>
+	
+    <root>
+        <level value="DEBUG"/>
+        <appender-ref ref="CONSOLE"/>
+        <!-- 
+        <appender-ref ref="APPLOGFILE"/>
+         -->
+    </root>
+
+</log4j:configuration>

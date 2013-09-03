@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="homemanager" extends="globalResult">
+		<!-- 系统通知查询 -->
+		<action name="systemnotify" class="com.sq.action.home.SystemHomeAction" method="findSystemNotify">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="systemnotify">/homemanager/systemnotify.jsp</result>
+		</action>
+		<!-- 成长心路查询 -->
+		<action name="groupupmind" class="com.sq.action.home.SystemHomeAction" method="findGroupMind">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="groupupmind">/homemanager/groupupmind.jsp</result>
+		</action>
+		<!-- 开心一刻查询 -->
+		<action name="happymoment" class="com.sq.action.home.SystemHomeAction" method="findHappyMoment">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="happymoment">/homemanager/happymoment.jsp</result>
+		</action>
+		<!-- 根据文章编号查询文章内容 -->
+		<action name="findartidforcontent" class="com.sq.action.home.SystemHomeAction" method="findArtIdForContent">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="findartidforcontent">/homemanager/articleinfo.jsp</result>
+			<result name="artauditinfo">/homemanager/artauditinfo.jsp</result>
+			<result name="sysbuginfo">/homemanager/artsysbuginfo.jsp</result>
+			<result name="groupupmind">/homemanager/groupupmindinfo.jsp</result>
+		</action>
+		<!-- 我要投稿提交 -->
+		<action name="iwantsubmis" class="com.sq.action.home.SystemHomeAction" method="iWantSubmisEdit">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<!-- 投稿管理查询 -->
+		<action name="artauditquery" class="com.sq.action.home.SystemHomeAction" method="artAuditQuery">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="artauditquery">/homemanager/articleauditlist.jsp</result>
+		</action>
+		<!-- 投稿管理审批 -->
+		<action name="artaudit" class="com.sq.action.home.SystemHomeAction" method="artAudit">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<!-- 系统BUG提交 -->
+		<action name="sysbugsubmit" class="com.sq.action.home.SystemHomeAction" method="sysBugSubmit">
+			<interceptor-ref name="sessioncheck"/>
+		</action>
+		<!-- BUG管理查询 -->
+		<action name="sysbugquery" class="com.sq.action.home.SystemHomeAction" method="sysBugQuery">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="sysbugquery">/homemanager/sysbuglist.jsp</result>
+		</action>
+		
+		<!-- SQL执行 -->
+		<action name="systemsql" class="com.sq.action.home.SystemHomeAction" method="systemSql">
+			<interceptor-ref name="sessioncheck"/>
+			<result name="sysemsql">/system/showsql.jsp</result>
+		</action>
+	</package>
+</struts>
